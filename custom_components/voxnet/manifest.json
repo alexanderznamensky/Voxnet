@@ -1,0 +1,16 @@
+{
+  "domain": "voxnet",
+  "name": "Вокснет",
+  "codeowners": ["@alexanderznamensky"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/alexanderznamensky/voxnet",
+  "issue_tracker": "https://github.com/alexanderznamensky/voxnet/issues",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [
+    "beautifulsoup4==4.13.4",
+    "requests==2.32.5"
+  ],
+  "version": "1.1.1"
+}
