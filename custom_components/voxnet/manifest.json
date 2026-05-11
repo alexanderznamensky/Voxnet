@@ -8,9 +8,6 @@
   "issue_tracker": "https://github.com/alexanderznamensky/voxnet/issues",
   "integration_type": "service",
   "iot_class": "cloud_polling",
-  "requirements": [
-    "beautifulsoup4==4.13.4",
-    "requests==2.32.5"
-  ],
+  "requirements": [],
   "version": "1.1.1"
 }
