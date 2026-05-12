@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from homeassistant.components.sensor import SensorDeviceClass, SensorEntity, SensorEntityDescription
+from homeassistant.components.sensor import SensorEntity, SensorEntityDescription
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.entity_platform import AddEntitiesCallback
@@ -16,7 +16,6 @@ SENSOR_DESCRIPTION = SensorEntityDescription(
     key="balance",
     translation_key="balance",
     native_unit_of_measurement="RUB",
-    device_class=SensorDeviceClass.MONETARY,
 )
 
 
