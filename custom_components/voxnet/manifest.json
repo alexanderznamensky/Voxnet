@@ -1,6 +1,6 @@
 {
   "domain": "voxnet",
-  "name": "Вокснет",
+  "name": "ISP Вокснет",
   "codeowners": ["@alexanderznamensky"],
   "config_flow": true,
   "dependencies": [],

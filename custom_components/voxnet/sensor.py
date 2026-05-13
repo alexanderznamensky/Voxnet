@@ -16,6 +16,7 @@ SENSOR_DESCRIPTION = SensorEntityDescription(
     key="balance",
     translation_key="balance",
     native_unit_of_measurement="RUB",
+    icon="mdi:cash",
 )
 
 
@@ -43,7 +44,12 @@ class VoxnetBalanceSensor(CoordinatorEntity[VoxnetBalanceCoordinator], SensorEnt
     @property
     def native_value(self) -> float | None:
         """Return the balance."""
-        return self.coordinator.data
+        value = self.coordinator.data
+
+        if value is None:
+            return None
+
+        return float(f"{float(value):.2f}")
 
     @property
     def device_info(self):
